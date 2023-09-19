@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shweshika - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            margin: 0;
+            padding :0;
+        }
+
+body{
+    background-color: rgb(24, 3, 37);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+    background-color: rgb(182, 130, 217);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:rgb(229, 233, 237);
+
+}
+nav ul li a:hover{
+    color: rgb(136, 136, 179);
+    list-style: none;
+    margin: 0 23px;
+    font-size:1.05rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: lavenderblush;
+    margin: 0 23px;
+}
+main hr{
+    border: 0;
+    background: #ac7be0;
+    height:1.0px;
+    margin:5px 200px;
+    
+}
+   .left{
+    font-size: 1.75rem ;
+   }
+   .firstSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 140px 0;
+}
+   .firstSection > div{
+     width: 30%;
+   }
+
+   .leftSection{
+    font-size: 2.5rem ;
+   }
+   .rightSection img{
+    width: 80%;
+   }
+   .purple{
+    color: blueviolet;
+   }
+   #element{
+    color: blueviolet;
+   }
+   .secondSection hr{
+    border: 0;
+    background: #ac7be0;
+    height:1.2px;
+    margin:60px 84px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+   .secondSection{
+    max-width:80vw;
+    margin:auto;
+    height:80vh;
+    font-family: 'Poppins', sans-serif;
+   }
+   .secondSection h1{
+    color:#ac7be0;
+    font-size: 2.5rem;
+   }
+   .secondSection h2{
+    color: lavender;
+    font-size: 1.45rem;
+    margin:25px 0px;
+   }
+   .thirdSection{
+    max-width:80vw;
+    margin:auto;
+    height:80vh;
+    font-family: 'Poppins', sans-serif;
+   }
+   .thirdSection h3{
+    color:#ac7be0;
+    font-size: 2.5rem;
+}
+    .thirdSection h4{
+    color: lavender;
+    font-size: 1.45rem;
+    margin:25px 0px;
+    }
+    .thirdSection h5{
+    color: lavender;
+    font-size: 1.45rem;
+    margin:25px 0px;
+    }
+    .fourthSection{
+    max-width:80vw;
+    margin:auto;
+    height:80vh;
+    font-family: 'Poppins', sans-serif;
+    }
+    .fourthSection h3{
+    color:#ac7be0;
+    font-size: 3.0rem;
+    }
+    .fourthSection h4{
+    color: lavender;
+    font-size: 1.45rem;
+    margin:25px 0px;
+    }
+    .fourthSection h5{
+    color: lavender;
+    font-size: 1.45rem;
+    margin:25px 0px;
+    }
+    .fourthSection h6{
+    color: lavender;
+    font-size: 1.45rem;
+    margin:25px 0px;
+    }
+    .fourthSection{
+    max-width:80vw;
+    margin:auto;
+    height:80vh;
+    font-family: 'Poppins', sans-serif;
+    }
+    .fifthSection h4{
+    color:#ac7be0;
+    font-size: 2.5rem;
+    }
+    .fifthSection h5{
+    color: lavender;
+    font-size: 1.45rem;
+    margin:25px 0px;
+    }
+    .sixthSection h2{
+    color:#ac7be0;
+    font-size: 2.5rem;
+    }
+    .sixthSection h3{
+    color:#ac7be0;
+    font-size: 2.5rem;
+    }
+    .sixthSection h4{
+    color: lavender;
+    font-size: 1.45rem;
+    margin:25px 0px;
+    }
+    /*.contact .info {
+        width: 100%;
+        background: #fff;
+      }
+      
+      .contact .info i {
+        font-size: 20px;
+        color: #0563bb;
+        float: left;
+        width: 44px;
+        height: 44px;
+        background: #eef7ff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      .contact .info h4 {
+        padding: 0 0 0 60px;
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 5px;
+        color: #45505b;
+      }
+      
+      .contact .info p {
+        padding: 0 0 0 60px;
+        margin-bottom: 0;
+        font-size: 14px;
+        color: #728394;
+      }
+      
+      .contact .info .email,
+      .contact .info .phone {
+        margin-top: 40px;
+      }
+      
+      .contact .info .email:hover i,
+      .contact .info .address:hover i,
+      .contact .info .phone:hover i {
+        background: #0563bb;
+        color: #fff;
+      }
+      
+      .contact .php-email-form {
+        width: 100%;
+        background: #fff;
+      }
+      
+      .contact .php-email-form .form-group {
+        padding-bottom: 8px;
+      }
+      
+      .contact .php-email-form .error-message {
+        display: none;
+        color: #fff;
+        background: #ed3c0d;
+        text-align: left;
+        padding: 15px;
+        font-weight: 600;
+      }
+      
+      .contact .php-email-form .error-message br+br {
+        margin-top: 25px;
+      }
+      
+      .contact .php-email-form .sent-message {
+        display: none;
+        color: #fff;
+        background: #18d26e;
+        text-align: center;
+        padding: 15px;
+        font-weight: 600;
+      }
+      
+      .contact .php-email-form .loading {
+        display: none;
+        background: #fff;
+        text-align: center;
+        padding: 15px;
+      }
+      
+      .contact .php-email-form .loading:before {
+        content: "";
+        display: inline-block;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        margin: 0 10px -6px 0;
+        border: 3px solid #18d26e;
+        border-top-color: #eee;
+        animation: animate-loading 1s linear infinite;
+      }
+      
+      .contact .php-email-form input,
+      .contact .php-email-form textarea {
+        border-radius: 4px;
+        box-shadow: none;
+        font-size: 14px;
+      }
+      
+      .contact .php-email-form input[type=text],
+      .contact .php-email-form input[type=email] {
+        height: 44px;
+      }
+      
+      .contact .php-email-form textarea {
+        padding: 10px 12px;
+      }
+      
+      .contact .php-email-form button[type=submit] {
+        background: #0563bb;
+        border: 0;
+        padding: 10px 35px;
+        color: #fff;
+        transition: 0.4s;
+        border-radius: 50px;
+      }
+      
+      .contact .php-email-form button[type=submit]:hover {
+        background: #0678e3;
+      }*/
+      /* Styles for the Contact Section */
+#contact {
+    background-color: rgb(24, 3, 37);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 p {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2em;
+    color: #411362;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.contact-info p {
+    margin: 0 20px;
+    text-align: center;
+}
+
+.contact-info h3 {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    color: #411362;
+}
+
+.contact-info h4 {
+    font-size: 1em;
+    color: #666;
+}
+
+.contact-info a {
+    color: #411362;
+    text-decoration: none;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #411362;
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #311050;
+}
+.cont{
+    color: white;
+}
+.cont2{
+    text-align: center;
+}
+
+      
+    
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Shweshika's Portfolio</div>
+            <div class="right">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+        <main>
+            <section class="firstSection">
+                <div class="leftSection">
+                    Hi, My Name is <span class="purple">"Shweshika"</span>
+                    <div>and I am a Passionate</div>
+                    <span id="element"></span>
+                </div>
+                <div class="rightSection">
+                    <img src="swe.JPG" alt="">
+                </div>
+            </section>
+            <hr>
+            <section class="secondSection">
+                <span></span><br>
+                <h1 id="About me">About me</h1>
+                <h2>Hello, I'm Shweshika Billakanti
+                    a driven and ambitious 4th-year BTech student pursuing a degree in 
+                    CSE(Aritificial Intelligence & Machine Learning) under JNTUH affiliated College. My academic journey has been a transformative experience, equipping me with both technical
+                    expertise and a deep understanding of the ever-evolving world of Technology.
+                    <h2>Throughout my BTech journey, I have acquired proficiency in various technical 
+                    domains, including Python,Java,HTML,SQL..etc. 
+                    These skills have been honed through hands-on projects, collaborative assignments, and internships,
+                     allowing me to tackle complex challenges with confidence.With graduation on the horizon, I am eagerly preparing to transition into
+                     the professional realm.</h2>
+                     <hr>
+                     <section class="fourthSection">
+                        <div class="leftSection">
+                    <span></span>
+                    <h3 class="skills"><p style="color: rgba(111, 47, 129, 0.89);">Skills</p></h3>
+                    <h3>Technical Skills</h3>
+                    <ul>
+                    <li>C</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>SQL</li>
+                    </ul></div>
+                    <section class="fourthSection">
+                        <div class="leftSection">
+                            <section class="fifthSection">
+                                <div class="leftSection">
+                            <body>
+                                <div class="leftSection">
+                                    <span></span>
+                    <h3>Soft skills</h3>
+                    <ul>
+                        <li>Communication</li>
+                        <li>Problem-Solving</li> 
+                        <li>Leadership</li>
+                    </ul></div>
+                                </div></section>
+                            </body>
+                            <hr>
+
+            <section class="thirdSection">
+                <div class="leftSection">
+            <span></span>
+            <h3 id="Projects">Projects</h3>
+            <h4>SMS-Spam Detection</h4><h5><a href="https://github.com/Sweshika1418/CodSoft-Internship/tree/main/SMS-Spam-Detection">https://github.com/Sweshika1418/CodSoft-Internship/tree/main/SMS-Spam-Detection</h5></a>
+            <h4>Movie Genre Classification</h4><h5><a href="https://github.com/Sweshika1418/CodSoft-Internship/tree/main/Movie_Genre_Classification">https://github.com/Sweshika1418/CodSoft-Internship/tree/main/Movie_Genre_Classification</h5></a>
+            <h4>Diabetes Prediction</h4><h5><a href="https://github.com/Sweshika1418/Internpe_Internship/tree/main/Diabetes_Prediction">https://github.com/Sweshika1418/Internpe_Internship/tree/main/Diabetes_Prediction</h5></a>
+            <h4>Titanic Classification</h4><h5><a href="https://github.com/Sweshika1418/BharthIntern_Internship/tree/main/Titanic_Classification">https://github.com/Sweshika1418/BharthIntern_Internship/tree/main/Titanic_Classification</h5></a>
+            <h4>Customer Churn Prediction</h4><h5><a href="https://github.com/Sweshika1418/CodSoft-Internship/tree/main/Customer_Churn_Prediction_project">https://github.com/Sweshika1418/CodSoft-Internship/tree/main/Customer_Churn_Pred</h5></a></div>
+            <hr>
+                    <section class="sixthSection">
+                        <div class="leftSection">
+                    <section id="contact">
+                        <h2><p style="color: rgba(111, 47, 129, 0.89);">Contact me</p></h2>
+                        <!-- <div class="contact-info">
+                            <p><a><h3>Email:billakantisweshika1402@gmail.com</h3></a></p>
+                            <p><h3>Phone:</h3><h4>+918340871337</h4></p>
+                            <p><h3>LinkedIn:</h3><h4><a href="https://www.linkedin.com/in/billakanti-shweshika-51968a287/">Your LinkedIn Profile</h4></a></p>
+                        </div> -->
+                        <div >
+                            <p>
+                                <h3>E-Mail : </h3><h4 class="cont"><b>billakantisweshika1402@gmail.com</b></h4>
+                                <h3>phone-No. : </h3><h4 class="cont">+91 8340871337</h4>
+                                <h3>LinkedIn:</h3><h4><a href="https://www.linkedin.com/in/billakanti-shweshika-51968a287/">Your LinkedIn Profile</h4></a>
+                            </p>
+                        </div>
+                        <div class="contact-form">
+                            <h3><form action="mailto:your.email@example.com" method="post" enctype="text/plain">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" required><br>
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required><br>
+                                <label for="message">Message:</label><br>
+                                <textarea id="message" name="message" rows="4" required></textarea><br>
+                                <input type="submit" value="Send">
+                            </form></h3>
+                        </div>
+                    </section>
+                    
+                      </section><!-- End Contact Section -->
+                    <style>
+                .skill {
+                    margin-bottom: 10px;
+                }
+        
+                .skill-label {
+                    font-weight: bold;
+                }
+        
+                .progress {
+                    width: 100%;
+                    height: 20px;
+                    background-color: #f1f1f1;
+                    border-radius: 5px;
+                }
+        
+                .progress-bar {
+                    width: 0;
+                    height: 100%;
+                    background-color: #4caf50; /* Change this to the desired color */
+                    text-align: center;
+                    line-height: 20px;
+                    color: white;
+                    border-radius: 5px; 
+                }
+            </style>
+        </head>
+        <body>
+            </section>
+        </div>
+        </main>
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed('#element', {
+              strings: ['Aspiring Data Scientist','Web Developer.'],
+              typeSpeed: 120,
+            });
+          </script>
+    </body>
+</html>
